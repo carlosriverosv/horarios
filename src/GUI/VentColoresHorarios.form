@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="2"/>
+    <Property name="title" type="java.lang.String" value="Elecci&#xf3;n de colores para casillas de horarios"/>
+    <Property name="iconImage" type="java.awt.Image" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+      <Connection code="new javax.swing.ImageIcon(getClass().getResource(&quot;/GUI/iconos/calendario.png&quot;)).getImage()" type="code"/>
+    </Property>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="true"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="115" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="1" attributes="0">
+                  <Component id="btnElegirColoresHorarios" min="-2" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <Component id="lbl5MasGrupos" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Component id="lblColorGr5" max="32767" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <Component id="lbl4Grupos" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Component id="lblColorGr4" max="32767" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <Component id="lbl3Grupos" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Component id="lblColorGr3" max="32767" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="lbl2Grupos" min="-2" max="-2" attributes="0"/>
+                              <Component id="lbl1Grupo" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <Component id="lblColorGr1" max="32767" attributes="0"/>
+                              <Component id="lblColorGr2" min="-2" pref="52" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                  </Group>
+              </Group>
+              <EmptySpace pref="143" max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="lbl1Grupo" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblColorGr1" min="-2" pref="26" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="lblColorGr2" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                  <Component id="lbl2Grupos" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="lblColorGr3" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                  <Component id="lbl3Grupos" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="lblColorGr4" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                  <Component id="lbl4Grupos" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="lbl5MasGrupos" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblColorGr5" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Component id="btnElegirColoresHorarios" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JLabel" name="lbl1Grupo">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="1 Grupo"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblColorGr1">
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_CreateCodePost" type="java.lang.String" value="CmdElegirColoresHorarios cmdElegirColoresHorarios = new CmdElegirColoresHorarios(this);&#xa;lblColorGr1.addMouseListener(new ButtonHandler(cmdElegirColoresHorarios));&#xa;lblColorGr1.setOpaque(true);&#xa;lblColorGr1.setBackground(Horario.UN_GRUPO);&#xa;lblColorGr1.setBorder(BorderFactory.createLineBorder(Color.black));"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lbl2Grupos">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="2 Grupos"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lbl3Grupos">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="3 Grupos"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lbl4Grupos">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="4 Grupos"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lbl5MasGrupos">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="5 Grupos"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblColorGr2">
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_CreateCodePost" type="java.lang.String" value="lblColorGr2.addMouseListener(new ButtonHandler(cmdElegirColoresHorarios));&#xa;lblColorGr2.setOpaque(true);&#xa;lblColorGr2.setBackground(Horario.DOS_GRUPOS);&#xa;lblColorGr2.setBorder(BorderFactory.createLineBorder(Color.black));"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblColorGr3">
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_CreateCodePost" type="java.lang.String" value="lblColorGr3.addMouseListener(new ButtonHandler(cmdElegirColoresHorarios));&#xa;lblColorGr3.setOpaque(true);&#xa;lblColorGr3.setBackground(Horario.TRES_GRUPOS);&#xa;lblColorGr3.setBorder(BorderFactory.createLineBorder(Color.black));"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblColorGr4">
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_CreateCodePost" type="java.lang.String" value="lblColorGr4.addMouseListener(new ButtonHandler(cmdElegirColoresHorarios));&#xa;lblColorGr4.setOpaque(true);&#xa;lblColorGr4.setBackground(Horario.CUATRO_GRUPOS);&#xa;lblColorGr4.setBorder(BorderFactory.createLineBorder(Color.black));"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblColorGr5">
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_CreateCodePost" type="java.lang.String" value="lblColorGr5.addMouseListener(new ButtonHandler(cmdElegirColoresHorarios));&#xa;lblColorGr5.setOpaque(true);&#xa;lblColorGr5.setBackground(Horario.CINCO_GRUPOS);&#xa;lblColorGr5.setBorder(BorderFactory.createLineBorder(Color.black));"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JButton" name="btnElegirColoresHorarios">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/GUI/iconos/aceptarPeque.png"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Aceptar"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="btnElegirColoresHorarios.addActionListener(new ButtonHandler(cmdElegirColoresHorarios));"/>
+      </AuxValues>
+    </Component>
+  </SubComponents>
+</Form>
