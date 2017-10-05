@@ -63,7 +63,7 @@ public abstract class CmdImportarArchivo implements CommandInterface {
     public boolean verificarArchivo(){
         try {
             String primeraLinea = Utilidades.leerLineaArchivo(origen).replace(" ", "");
-            return primeraLinea.equalsIgnoreCase(nombreColumnas);
+            return Utilidades.stripAccents(primeraLinea).equalsIgnoreCase(Utilidades.stripAccents(nombreColumnas));
         } catch (FileNotFoundException ex) {
             return false;
         } catch (IOException ex) {
