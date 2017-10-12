@@ -29,6 +29,8 @@ import javax.swing.JOptionPane;
  * @author Carlos
  */
 public class CmdImportarProgAca extends CmdImportarArchivo {
+    
+    private ArrayList<Integer> docentesNoExisten;
 
     public CmdImportarProgAca(JMenuItem jmenu) {
         super(jmenu);
@@ -45,6 +47,7 @@ public class CmdImportarProgAca extends CmdImportarArchivo {
         boolean noLeer = true;
         String errores = "";
         Progacademica progAca;
+        docentesNoExisten = new ArrayList();
         try {
             ArrayList<String> archProgAca = Utilidades.leerArchivo(origen);
             archProgAca.remove(0);
@@ -176,6 +179,7 @@ public class CmdImportarProgAca extends CmdImportarArchivo {
                                     throw new RollbackException();
                                 }
                             } catch (NoResultException ex) {
+                                docentesNoExisten.add(Integer.parseInt(datosItemHorario[11]));
                                 errores += "-No fue posible crear el item de horario de la asignatura " + datosItemHorario[0] + " Grupo " + numGrupo + " porque el Docente con número de identificación " + datosItemHorario[11] + " no se encuentra registrado." + '\n';
                                 throw new RollbackException();
                             } catch (NumberFormatException ex) {
@@ -203,6 +207,9 @@ public class CmdImportarProgAca extends CmdImportarArchivo {
             }
             errores = "No se importó ningun dato.";
         }
+        if(!errores.isEmpty()) {
+            tratarErroresImportacion();
+        }
         return errores;
     }
 
@@ -214,5 +221,13 @@ public class CmdImportarProgAca extends CmdImportarArchivo {
     @Override
     public void processEvent(KeyEvent e) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    private void tratarErroresImportacion() {
+        if(!docentesNoExisten.isEmpty()) {
+            for(int i = 0; i < docentesNoExisten.size(); i++) {
+                
+            }
+        }
     }
 }
